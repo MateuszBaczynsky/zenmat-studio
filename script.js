@@ -1,11 +1,9 @@
-console.log("ZENMAT STUDIO działa");
+function scrollGames(){
 
+    document
+    .getElementById("games")
+    .scrollIntoView({
+        behavior:"smooth"
+    });
 
-const button = document.querySelector("button");
-
-
-button.onclick = () => {
-
-    alert("SYGNAŁ pojawi się wkrótce na Roblox!");
-
-};
+}
