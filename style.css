@@ -5,21 +5,18 @@
     font-family: Arial, sans-serif;
 }
 
-
 body {
-    background: #080812;
+    background: #070710;
     color: white;
 }
 
-
+/* HEADER */
 header {
     min-height: 100vh;
     background:
-    radial-gradient(circle at top, #5635ff, transparent 40%),
-    #080812;
+        radial-gradient(circle at top, #6a4cff, transparent 45%),
+        #070710;
 }
-
-
 
 nav {
     display:flex;
@@ -28,37 +25,40 @@ nav {
     padding:30px 10%;
 }
 
-
 nav h2 {
     font-size:28px;
-    color:#9d8cff;
+    color:#b7a6ff;
+    letter-spacing:1px;
 }
-
 
 nav a {
     color:white;
     text-decoration:none;
     margin-left:25px;
+    opacity:0.85;
+    transition:0.2s;
 }
 
+nav a:hover {
+    opacity:1;
+    color:#cbbaff;
+}
 
 .hero {
     text-align:center;
     padding-top:150px;
 }
 
-
 .hero h1 {
-    font-size:60px;
+    font-size:58px;
+    line-height:1.2;
 }
-
 
 .hero p {
     margin-top:20px;
-    color:#bdbdbd;
+    color:#c2c2c2;
     font-size:20px;
 }
-
 
 button {
     margin-top:40px;
@@ -69,21 +69,26 @@ button {
     color:white;
     font-size:18px;
     cursor:pointer;
+    transition:0.3s;
 }
-
 
 button:hover {
     background:#9d8cff;
+    transform:translateY(-3px);
 }
 
-
-
+/* SECTIONS */
 section {
     padding:80px 10%;
     text-align:center;
 }
 
+h2 {
+    font-size:36px;
+    margin-bottom:20px;
+}
 
+/* CARDS */
 .cards {
     display:flex;
     justify-content:center;
@@ -92,63 +97,53 @@ section {
     flex-wrap:wrap;
 }
 
-
-
 .card {
-
     width:320px;
     padding:30px;
     background:#111122;
     border-radius:20px;
     border:1px solid #29294a;
-
     transition:0.3s;
 }
-
 
 .card:hover {
     transform:translateY(-10px);
     border-color:#7c5cff;
 }
 
-
-
 .card h3 {
     font-size:24px;
     margin-bottom:20px;
 }
-
 
 .card p {
     color:#bdbdbd;
     line-height:1.5;
 }
 
-
-.card span {
+.status {
     display:block;
     margin-top:20px;
-    color:#9d8cff;
+    font-weight:bold;
 }
 
+.in-dev {
+    color:#ffdd66;
+}
 
+.service {
+    color:#7c5cff;
+}
 
+/* ABOUT */
 #about p {
     max-width:700px;
     margin:auto;
-    color:#bbb;
+    color:#ccc;
     line-height:1.6;
 }
 
-
-
-footer {
-    padding:30px;
-    text-align:center;
-    background:#05050b;
-    color:#777;
-}
-
+/* CONTACT */
 #contact a {
     color:#9d8cff;
     text-decoration:none;
@@ -156,4 +151,12 @@ footer {
 
 #contact a:hover {
     text-decoration:underline;
+}
+
+/* FOOTER */
+footer {
+    padding:30px;
+    text-align:center;
+    background:#05050b;
+    color:#777;
 }
