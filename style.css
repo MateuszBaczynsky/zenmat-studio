@@ -148,3 +148,12 @@ footer {
     background:#05050b;
     color:#777;
 }
+
+#contact a {
+    color:#9d8cff;
+    text-decoration:none;
+}
+
+#contact a:hover {
+    text-decoration:underline;
+}
